@@ -1,4 +1,5 @@
-var hitNum
+var bubbles = prompt("Number of bubbles?");
+var hitNum;
 var score = 0;
 var clickedNum;
 
@@ -46,12 +47,10 @@ document.querySelector("#pbtm").addEventListener("click", function(details) {
     if(clickedNum === hitNum) {
         increaseScore();
         newHit();
-        makeBubble(150);
+        makeBubble(bubbles);
     }
 });
 
-
-
 newHit();
 runTimer(61);
-makeBubble(150);
+makeBubble(bubbles);
