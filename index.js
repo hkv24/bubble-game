@@ -46,7 +46,7 @@ document.querySelector("#pbtm").addEventListener("click", function(details) {
     if(clickedNum === hitNum) {
         increaseScore();
         newHit();
-        makeBubble(171);
+        makeBubble(150);
     }
 });
 
@@ -54,4 +54,4 @@ document.querySelector("#pbtm").addEventListener("click", function(details) {
 
 newHit();
 runTimer(61);
-makeBubble(171);
+makeBubble(150);
